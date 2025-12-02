@@ -44,7 +44,7 @@ export class PayRestController {
   @Post('casso')
   async handleCassoWebhook(@Req() req: Request, @Res() res: Response) {
     try {
-      const secretKey = '9BYox3DBqpHriGbrYvXQX8utACGPiUHYuUJX9jzK9uKDY8a1bumpIexSE8kQfiwm';
+      const secretKey = 'Et90zKkci0bsdwJ8skY9dWmj1xg86s78UYgcCqGr3RvCTQmUXZrAQDurDNaqOMuB';
       const signatureHeader = req.headers['x-casso-signature'] as string;
 
       // ⚠️ Lưu ý: cần bật rawBody trong main.ts
